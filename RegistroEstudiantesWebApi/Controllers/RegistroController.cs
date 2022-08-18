@@ -44,7 +44,7 @@ namespace RegistroEstudiantesWebApi.Controllers
                 var estudiante = new EstudianteModel
                 {
                     Id = id,
-                    Name = model.Name,
+                    Name = model.Name.ToUpper().Trim(),
                 };
 
                 registro.Add(estudiante);
